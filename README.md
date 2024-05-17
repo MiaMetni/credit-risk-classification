@@ -7,10 +7,27 @@ Use various techniques to train and evaluate a model based on loan risk. You’l
 
 ## Credit Risk Analysis Report
 ### Purpose of this analysis (Overview):
+To develop and evaluate a logistic regression model to predict the creditworthiness of borrowers using historical lending data. By identifying the risk of default, the model aims to assist a peer-to-peer lending services company in making informed lending decisions, ultimately reducing financial risk and improving loan approval processes.
 
 ### The results: Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
+* Accuracy Score: 99%
+* Precision Score:
+    * For healthy loans (0): 1.00
+    * For high-risk loans (1): 0.85
+* Recall Score:
+    * For healthy loans (0): 0.99
+    * For high-risk loans (1): 0.91
 
 ### A summary: Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
+The logistic regression model demonstrates exceptional performance in predicting both healthy and high-risk loans. The accuracy score of 99% indicates that the vast majority of predictions are correct. The precision, recall, and F1-scores for both classes are high, with perfect or near-perfect values for healthy loans (0) and strong values for high-risk loans (1).
+
+Healthy Loans (0): The model achieves perfect precision (1.00), recall (0.99), and F1-score (1.00), indicating it is highly accurate in identifying and predicting healthy loans.
+
+High-Risk Loans (1): The model shows high precision (0.85), recall (0.91), and F1-score (0.88), suggesting it reliably identifies most high-risk loans, despite the class imbalance.
+Justification for Recommending the Model:
+
+(reference python script written response for address in full)
+The logistic regression model is recommended for use by the company due to its high accuracy and reliable performance in predicting both healthy and high-risk loans. The model's ability to accurately classify loans ensures that healthy loans are rarely misclassified as high-risk and that the majority of high-risk loans are correctly identified. This reliability can significantly aid in reducing the financial risk associated with loan defaults and improving the company's decision-making process.
 
 --
 ## PROCESS
